@@ -22,7 +22,10 @@
             android:layout_height="100dp"
             android:src="@drawable/e_logo"
             android:background="@drawable/rectblanco"/>
-
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
