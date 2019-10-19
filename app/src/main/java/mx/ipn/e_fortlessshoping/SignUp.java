@@ -3,6 +3,7 @@ package mx.ipn.e_fortlessshoping;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,14 +11,37 @@ import android.os.Bundle;
 import android.app.Dialog;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
+    Button inicio, registro;
+
     EditText fecha;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        inicio = (Button) findViewById(R.id.Inicio);
+        inicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignUp.this, Login.class));
+                finish();
+            }
+        });
+
+        registro = (Button) findViewById(R.id.Registro);
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(SignUp.this, "Registro Exitoso", Toast.LENGTH_LONG).show();
+                //Codigo del registro
+            }
+        });
+
         fecha = (EditText) findViewById(R.id.FecNac);
         fecha.setOnClickListener(new View.OnClickListener() {
             @Override
