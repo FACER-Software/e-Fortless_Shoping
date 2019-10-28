@@ -122,6 +122,37 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"/>
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/naranja"
+                    android:textColor="@color/naranja1"
+                    android:text="Masculino"
+                    android:id="@+id/Masculino"
+                    android:textSize="16dp"
+                    android:paddingRight="30dp">
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/naranja"
+                    android:textColor="@color/naranja1"
+                    android:text="Femenino"
+                    android:id="@+id/Femenino"
+                    android:textSize="16dp"
+                    android:paddingRight="30dp">
+                </RadioButton>
+            </RadioGroup>
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
